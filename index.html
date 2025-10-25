@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMR Mining</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monero Mining Dashboard</h1>
+        <input type="text" id="wallet-input" placeholder="Enter your wallet address" />
+        <button id="start-button">Start Smart Mining</button>
+        <div class="buttons">
+            <button id="see-hash-rate">See Hash Rate</button>
+            <button id="see-results">See Results</button>
+        </div>
+        <div class="stats">
+            <h2>Mining Statistics</h2>
+            <p>Hash Rate: <span id="hash-rate">0 H/s</span></p>
+            <p>Shares: <span id="shares">0</span></p>
+            <p>Mined XMR: <span id="mined-xmr">0.0000000 XMR</span></p>
+        </div>
+        <div class="logs">
+            <h2>Logs</h2>
+            <pre id="log-output"></pre>
+        </div>
+    </div>
+    <script src="xmrig.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
